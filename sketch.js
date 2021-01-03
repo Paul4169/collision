@@ -10,7 +10,7 @@ function setup() {
   fr.shapeColor="green"
   fr.debug=true;
   fr.velocityY=-2;
-  mr=createSprite(150, 110, 50, 30);
+  mr=createSprite(200, 70, 50, 30);
   mr.debug=true;
   mr.shapeColor="green"
   mr.velocityY=+2;
@@ -19,8 +19,7 @@ function setup() {
 function draw() {
   
   background(255,255,255);
-  mr.y=World.mouseY;
-  mr.x=World.mouseX;
+ 
  if(mr.x-fr.x<fr.width/2+mr.width/2 && fr.x-mr.x<fr.width/2+mr.width/2 ){
    
 mr.velocityX=mr.velocityX*(-1);
